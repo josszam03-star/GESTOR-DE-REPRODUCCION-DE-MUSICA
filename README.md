@@ -11,11 +11,17 @@ Proyecto desarrollado para la administración de canciones mediante una estructu
 
 ## **Instrucciones de Compilación y Ejecución**
 1. Asegúrate de tener instalado el JDK de Java en su computadora.
-2. Abrá una terminal en la carpeta del proyecto.
-3. Compila todos los archivos fuente:
+2. Descargue las clases que están cargadas en el repositorio.
+3. Guardelas en una carpeta.
+4. Abrá una terminal.
+5. En la terminal agregue el siguiente comando:
+   ```bash
+   cd
+   en seguida de este, escriba la ruta de la carpeta donde guardo las clases.
+6. Compile todos los archivos fuente:
    ```bash
    javac *.java
-4. Ejecútelos con:
+7. Ejecútelos con:
    ```bash
    java Main
    
