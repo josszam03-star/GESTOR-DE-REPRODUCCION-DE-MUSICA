@@ -17,7 +17,7 @@ Proyecto desarrollado para la administración de canciones mediante una estructu
 5. En la terminal agregue el siguiente comando:
    ```bash
    cd
-   en seguida de este, escriba la ruta de la carpeta donde guardo las clases.
+en seguida de este, escriba la ruta de la carpeta donde guardo las clases.
 6. Compile todos los archivos fuente:
    ```bash
    javac *.java
