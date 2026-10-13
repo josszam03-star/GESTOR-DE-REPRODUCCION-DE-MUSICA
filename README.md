@@ -3,7 +3,7 @@
 Proyecto desarrollado para la administración de canciones mediante una estructura de datos personalizada en Java.
 
 ## **Integrantes**
--
+- Paniagua Ramírez Rubí Esmeralda
 - Zamora García Joselyne
 
 ## **Versión de Java**
@@ -15,3 +15,7 @@ Proyecto desarrollado para la administración de canciones mediante una estructu
 3. Compila todos los archivos fuente:
    ```bash
    javac *.java
+4. Ejecútelos con:
+   ```bash
+   java Main
+   
