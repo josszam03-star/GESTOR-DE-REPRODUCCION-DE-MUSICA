@@ -1,5 +1,3 @@
-package examen_practico;
-
 public class Nodo {
 
     private Cancion cancion;

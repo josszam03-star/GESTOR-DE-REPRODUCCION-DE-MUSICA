@@ -1,25 +1,23 @@
-package examen_practico;
-
 public class ListaCircularDoblementeEnlazada {
     private Nodo inicio;
     private Nodo finalNodo; 
     private Nodo actual;
-    private int tamaño;
+    private int tamanio;
     private int contadorId; 
     public ListaCircularDoblementeEnlazada() {
         this.inicio = null;
         this.finalNodo = null;
         this.actual = null;
-        this.tamaño = 0;
+        this.tamanio = 0;
         this.contadorId = 1; // Empieza en 1
     }
 
     public boolean estaVacia() {
-        return tamaño == 0;
+        return tamanio == 0;
     }
 
-    public int getTamaño() {
-        return tamaño;
+    public int getTamanio() {
+        return tamanio;
     }
 
     public Cancion getCancionActual() {
@@ -46,7 +44,7 @@ public class ListaCircularDoblementeEnlazada {
             inicio = nuevo;
             // Al agregar a una lista no vacía, la canción actual NO cambia
         }
-        tamaño++;
+        tamanio++;
     }
 
     // 2. Agregar al final O(1)
@@ -68,7 +66,7 @@ public class ListaCircularDoblementeEnlazada {
             finalNodo = nuevo;
             // La canción actual se mantiene igual
         }
-        tamaño++;
+        tamanio++;
     }
 
     // 3. Buscar por identificador O(n)
@@ -76,7 +74,7 @@ public class ListaCircularDoblementeEnlazada {
         if (estaVacia()) return null;
 
         Nodo aux = inicio;
-        for (int i = 0; i < tamaño; i++) {
+        for (int i = 0; i < tamanio; i++) {
             if (aux.getCancion().getId() == id) {
                 return aux.getCancion();
             }
@@ -90,7 +88,7 @@ public class ListaCircularDoblementeEnlazada {
         if (estaVacia()) return false;
 
         Nodo aux = inicio;
-        for (int i = 0; i < tamaño; i++) {
+        for (int i = 0; i < tamanio; i++) {
             if (aux.getCancion().getId() == id) {
                 actual = aux;
                 return true;
@@ -105,7 +103,7 @@ public class ListaCircularDoblementeEnlazada {
         if (estaVacia()) return false;
 
         Nodo aux = inicio;
-        for (int i = 0; i < tamaño; i++) {
+        for (int i = 0; i < tamanio; i++) {
             if (aux.getCancion().getId() == id) {
                 eliminarNodo(aux);
                 return true;
@@ -124,7 +122,7 @@ public class ListaCircularDoblementeEnlazada {
 
     // Método auxiliar para desacoplar un nodo de la lista circular
     private void eliminarNodo(Nodo nodoAEliminar) {
-        if (tamaño == 1) {
+        if (tamanio == 1) {
             inicio = null;
             finalNodo = null;
             actual = null;
@@ -148,7 +146,7 @@ public class ListaCircularDoblementeEnlazada {
                 actual = siguienteNodo;
             }
         }
-        tamaño--;
+        tamanio--;
     }
 
     // 8. Avanzar O(1)
@@ -173,7 +171,7 @@ public class ListaCircularDoblementeEnlazada {
         }
         Nodo aux = inicio;
         System.out.println("--- Lista hacia adelante ---");
-        for (int i = 0; i < tamaño; i++) {
+        for (int i = 0; i < tamanio; i++) {
             String marca = (aux == actual) ? " (ACTUAL)" : "";
             System.out.println(aux.getCancion() + marca);
             aux = aux.getSiguiente();
@@ -187,7 +185,7 @@ public class ListaCircularDoblementeEnlazada {
         }
         Nodo aux = finalNodo;
         System.out.println("--- Lista hacia atrás ---");
-        for (int i = 0; i < tamaño; i++) {
+        for (int i = 0; i < tamanio; i++) {
             String marca = (aux == actual) ? " (ACTUAL)" : "";
             System.out.println(aux.getCancion() + marca);
             aux = aux.getAnterior();

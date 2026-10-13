@@ -1,5 +1,3 @@
-package examen_practico;
-
 public class Cancion {
 
     //Atributos

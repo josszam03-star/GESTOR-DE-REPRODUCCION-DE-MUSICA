@@ -1,5 +1,3 @@
-package examen_practico;
-
 import java.util.Scanner;
 
 public class Menu {
@@ -88,7 +86,7 @@ public class Menu {
     private void agregarInicio() {
         System.out.println("\n*** Agregar una Canción al Inicio ***");
 
-        System.out.print("TÍTULO: ");
+        System.out.print("TITULO: ");
         String titulo = scanner.nextLine();
 
         System.out.print("ARTISTA: ");
@@ -102,7 +100,7 @@ public class Menu {
     private void agregarFinal() {
         System.out.println("\n*** Agregar Canción al Final ***");
 
-        System.out.print("TÍTULO: ");
+        System.out.print("TITULO: ");
         String titulo = scanner.nextLine();
 
         System.out.print("ARTISTA: ");
@@ -209,7 +207,7 @@ public class Menu {
     }
 
     private void consultarCantidad() {
-        System.out.println("\nTotal de canciones en la lista: " + lista.getTamaño());
+        System.out.println("\nTotal de canciones en la lista: " + lista.getTamanio());
     }
 
     private void simularReproduccion() {
